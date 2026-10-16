@@ -107,8 +107,11 @@ public CorsConfigurationSource corsConfigurationSource() {
     CorsConfiguration configuracao = new CorsConfiguration();
 
     configuracao.setAllowedOrigins(
-    java.util.List.of("http://localhost:5173")
-    );
+    java.util.List.of(
+        "http://localhost:5173",
+        "https://lifedesk-xi.vercel.app"
+    )
+);
     configuracao.setAllowedMethods(
         java.util.List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
     );
