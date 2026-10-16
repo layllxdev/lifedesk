@@ -1,0 +1,56 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #263449;
+  background: #f7f8fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --app-bg: #f7f8fa;
+  --surface: #ffffff;
+  --text-primary: #263449;
+  --text-secondary: #8993a4;
+  --border-color: #e9edf2;
+  --accent: #55759d;
+  --accent-soft: #edf2f9;
+}
+
+:root[data-theme="dark"] {
+  color: #e5eaf2;
+  background: #151a23;
+
+  --app-bg: #151a23;
+  --surface: #202734;
+  --text-primary: #e5eaf2;
+  --text-secondary: #a2adbf;
+  --border-color: #343e4e;
+  --accent: #a6c2eb;
+  --accent-soft: #2c394d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--app-bg);
+  color: var(--text-primary);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}

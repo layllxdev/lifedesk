@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: lifedesk-postgres
+    environment:
+      POSTGRES_DB: lifedesk
+      POSTGRES_USER: lifedesk
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-lifedesk_dev}
+    ports:
+      - "5433:5432"
+    volumes:
+      - lifedesk_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lifedesk -d lifedesk"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  lifedesk_data:
