@@ -19,3 +19,5 @@ backend/.env.*
 *.log
 
 backend/src/main/resources/application.properties
+.neon
+node_modules/

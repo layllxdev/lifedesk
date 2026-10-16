@@ -19,7 +19,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api/compromissos")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lifedesk-xi.vercel.app"
+})
 public class CompromissoController {
 
     private final CompromissoRepository repository;

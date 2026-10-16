@@ -27,8 +27,8 @@ type Categoria = {
   nome: string;
 };
 
-const API_LANCAMENTOS = "http://localhost:8080/api/lancamentos";
-const API_CATEGORIAS = "http://localhost:8080/api/categorias";
+const API_LANCAMENTOS = "https://lifedesk.onrender.com/api/lancamentos";
+const API_CATEGORIAS = "https://lifedesk.onrender.com/api/categorias";
 
 function formatarMoeda(valor: number) {
   return valor.toLocaleString("pt-BR", {

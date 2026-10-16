@@ -37,10 +37,10 @@ type Categoria = {
 
 };
 
-const API_CATEGORIAS = "http://localhost:8080/api/categorias";
-const API_COMPROMISSOS = "http://localhost:8080/api/compromissos";
-const API_LANCAMENTOS = "http://localhost:8080/api/lancamentos";
-const API_METAS = "http://localhost:8080/api/metas";
+const API_CATEGORIAS = "https://lifedesk.onrender.com/api/categorias";
+const API_COMPROMISSOS = "https://lifedesk.onrender.com/api/compromissos";
+const API_LANCAMENTOS = "https://lifedesk.onrender.com/api/lancamentos";
+const API_METAS = "https://lifedesk.onrender.com/api/metas";
 
 type Tarefa = {
 
@@ -54,7 +54,7 @@ type Tarefa = {
 
 };
 
-const API = "http://localhost:8080/api/tarefas";
+const API = "https://lifedesk.onrender.com/api/tarefas";
 
 const paginas = [
 

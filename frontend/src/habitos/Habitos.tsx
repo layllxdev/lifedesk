@@ -18,7 +18,7 @@ type Resumo = {
   progresso: number;
 };
 
-const API = "http://localhost:8080/api/habitos";
+const API = "https://lifedesk.onrender.com/api/habitos";
 
 function dataLocal(): string {
   const agora = new Date();

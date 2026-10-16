@@ -5,7 +5,7 @@ import Image from "@tiptap/extension-image";
 import Underline from "@tiptap/extension-underline";
 import "./Anotacoes.css";
 
-const API = "http://localhost:8080/api/anotacoes";
+const API = "https://lifedesk.onrender.com/api/anotacoes";
 
 type Pasta = {
   id: number;

@@ -18,7 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/anotacoes")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lifedesk-xi.vercel.app"
+})
 public class AnotacaoController {
 
     private final AnotacaoService service;

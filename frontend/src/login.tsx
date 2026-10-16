@@ -25,7 +25,7 @@ export default function Login({ aoEntrar }: Props) {
 
     try {
       const resposta = await fetch(
-        `http://localhost:8080/api/auth/${cadastro ? "cadastro" : "login"}`,
+        `https://lifedesk.onrender.com/api/auth/${cadastro ? "cadastro" : "login"}`,
         {
           method: "POST",
           credentials: "include",

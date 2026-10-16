@@ -17,7 +17,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api/lancamentos")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lifedesk-xi.vercel.app"
+})
 public class LancamentoController {
 
     private final LancamentoRepository repository;

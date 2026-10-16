@@ -17,7 +17,10 @@ import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api/categorias")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lifedesk-xi.vercel.app"
+})
 public class CategoriaController {
 
     private final CategoriaRepository repository;

@@ -1,7 +1,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 
-const API = "http://localhost:8080/api/compromissos";
+const API = "https://lifedesk.onrender.com/api/compromissos";
 
 type Compromisso = {
   id: number;

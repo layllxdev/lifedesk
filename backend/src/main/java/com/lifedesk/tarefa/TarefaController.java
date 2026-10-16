@@ -19,7 +19,10 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/tarefas")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://lifedesk-xi.vercel.app"
+})
 public class TarefaController {
 
     private final TarefaRepository repository;

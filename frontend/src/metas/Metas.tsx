@@ -1,7 +1,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 
-const API = "http://localhost:8080/api/metas";
+const API = "https://lifedesk.onrender.com/api/metas";
 
 type Etapa = {
   titulo: string;
